@@ -14,7 +14,7 @@ def make_dict(key_value_list):
     # Enter code here
     if len(key_value_list)>0:
         for item in key_value_list:
-            result_dictionary=dict(item)
+            result_dictionary[item[0]]=item[1]
     return result_dictionary
 
 # Testing code
