@@ -77,7 +77,12 @@ def make_cipher_dict(alphabet):
     Given a string of unique characters, compute a random 
     cipher dictionary for these characters
     """
-    return {}
+    new_cipher_dict={}
+    if len(alphabet)>0:
+        for alpha in alphabet:
+            new_cipher_dict[alpha]=random.choice(['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'])
+
+    return new_cipher_dict
 
 # Tests
 print("Output for part 3")
