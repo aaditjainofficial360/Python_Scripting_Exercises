@@ -14,7 +14,14 @@ def triangle_area(x_0, y_0, x_1, y_1, x_2, y_2):
         s = 0.5*(a+b+c)
         area = (s*(s-a)*(s-b)*(s-c))**0.5
     '''
-    pass
+    a = T10.point_distance(x_0=x_0, y_0=y_0, x_1=x_1, y_1=y_1)
+    b = T10.point_distance(x_1, y_1, x_2, y_2)
+    c = T10.point_distance(x_2, y_2, x_0, y_0)
+
+    s = 0.5*(a+b+c)
+
+    area = (s*(s-a)*(s-b)*(s-c))**0.5
+    return area
 
 
 ###################################################
